@@ -1,8 +1,26 @@
 [deps]
-Adapt = "79e6a3ab-5dfb-504d-930d-738a2a938a0e"
+CDSAPI = "8a7b9de3-9c00-473e-88b4-7eccd7ef2fea"
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
 CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
-ClimaOcean = "0376089a-ecfe-4b0e-a64f-9c555d74d754"
-NCDatasets = "85f8d34a-cbdd-5861-8df4-14fed0d494ab"
+ClimaSeaIce = "6ba0ff68-24e6-4315-936c-2e99227c95a4"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+MPI = "da04e1cc-30fd-572f-bb4f-1f8673147195"
+MPIPreferences = "3da0fdf6-3ccc-4f1b-acd9-58baa6c99267"
+NumericalEarth = "904d977b-046a-4731-8b86-9235c0d1ef02"
 OceanBioME = "a49af516-9db8-4be4-be45-1dad61c5a376"
 Oceananigans = "9e8cae18-63c1-5223-a75c-80ca9d6e9a09"
+OpenMPI_jll = "fe0851c0-eecd-5654-98d4-656369965a5c"
+
+[extras]
+CUDA_Runtime_jll = "76a88914-d11a-5bdc-97e0-2f5a05c973a2"
+
+[preferences.MPIPreferences]
+__clear__ = ["preloads_env_switch"]
+_format = "1.0"
+abi = "OpenMPI"
+binary = "system"
+cclibs = []
+libmpi = "libmpi"
+mpiexec = "srun"
+preloads = []
